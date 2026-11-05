@@ -31,5 +31,15 @@
     "commander": "15.0.0",
     "picocolors": "1.1.1",
     "zod": "4.6.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed-jarboui/p3-agent-runtime-harness.git",
+    "directory": "apps/cli"
+  },
+  "homepage": "https://github.com/Mohamed-jarboui/p3-agent-runtime-harness#readme",
+  "bugs": {
+    "url": "https://github.com/Mohamed-jarboui/p3-agent-runtime-harness/issues"
+  },
+  "author": "Mohamed Jarboui"
 }

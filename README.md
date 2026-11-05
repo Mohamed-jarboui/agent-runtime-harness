@@ -307,8 +307,8 @@ Full per-task table: [docs/evaluation-results.md](docs/evaluation-results.md). *
 Requirements: Node.js **≥ 22.13** (tested on 22; CI also runs 24) and pnpm 10 (`corepack enable`).
 
 ```bash
-git clone https://github.com/Mohamed-jarboui/P3.git loopsmith
-cd loopsmith
+git clone https://github.com/Mohamed-jarboui/p3-agent-runtime-harness.git
+cd p3-agent-runtime-harness
 pnpm install
 pnpm build
 ```
