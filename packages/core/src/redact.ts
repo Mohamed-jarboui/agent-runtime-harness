@@ -22,7 +22,6 @@ const SENSITIVE_SUFFIXES = [
   'credentials',
   'privatekey',
   'accesskey',
-  'sessionid',
 ];
 
 export function isSensitiveKey(key: string): boolean {

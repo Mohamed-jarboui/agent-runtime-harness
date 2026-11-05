@@ -182,8 +182,6 @@ export function formatEvent(event: RuntimeEvent, options: RenderOptions = {}): s
         c.yellow('⚠'),
         c.yellow(`${agent}untrusted content flagged in ${String(d.source)}: ${String(d.signal)}`),
       );
-    case 'error':
-      return line(c.red('!'), c.red(short(d.message)));
     default:
       return null;
   }

@@ -29,7 +29,9 @@ for (const file of files) {
     }
   }
 }
-const envFiles = files.filter((f) => /(^|\/)\.env$/.test(f) && f !== 'examples/sample-workspace/.env');
+const envFiles = files.filter(
+  (f) => /(^|\/)\.env$/.test(f) && f !== 'examples/sample-workspace/.env',
+);
 for (const f of envFiles) {
   console.error(`tracked .env file: ${f}`);
   problems++;

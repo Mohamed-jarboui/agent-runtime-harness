@@ -107,7 +107,15 @@ describe('redaction', () => {
       'client_secret',
     ])
       expect(isSensitiveKey(k)).toBe(true);
-    for (const k of ['inputTokens', 'maxTokens', 'tokenizer', 'path', 'content'])
+    for (const k of [
+      'inputTokens',
+      'maxTokens',
+      'tokenizer',
+      'path',
+      'content',
+      'sessionId',
+      'runId',
+    ])
       expect(isSensitiveKey(k)).toBe(false);
   });
 });

@@ -40,14 +40,12 @@ export const EVENT_TYPES = [
   'workflow.paused',
   'workflow.completed',
   'workflow.failed',
-  'context.built',
   'context.compacted',
   'memory.recalled',
   'memory.stored',
   'recovery.attempted',
   'limit.exceeded',
   'security.flagged',
-  'error',
 ] as const;
 
 export type RuntimeEventType = (typeof EVENT_TYPES)[number];
