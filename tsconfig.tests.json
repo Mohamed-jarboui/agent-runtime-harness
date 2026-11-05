@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "rootDir": ".",
+    "paths": {
+      "@loopsmith/*": ["./packages/*/src/index.ts"],
+      "@loopsmith/workspace-analyst": ["./examples/workspace-analyst/src/index.ts"]
+    }
+  },
+  "include": ["tests", "vitest.config.ts"]
+}

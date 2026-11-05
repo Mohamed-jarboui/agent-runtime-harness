@@ -1,0 +1,37 @@
+{
+  "name": "loopsmith-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LoopSmith: a provider-agnostic TypeScript agent runtime and harness",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc -b tsconfig.build.json && tsc -p tsconfig.tests.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "loopsmith": "node apps/cli/dist/index.js",
+    "demo": "pnpm build && node apps/cli/dist/index.js demo --yes",
+    "eval": "pnpm build && node apps/cli/dist/index.js eval run",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test",
+    "secrets:check": "node scripts/check-secrets.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "^22.20.5",
+    "eslint": "10.14.0",
+    "globals": "^17.14.0",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.1.0"
+  }
+}

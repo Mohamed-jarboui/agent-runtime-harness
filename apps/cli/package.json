@@ -1,0 +1,35 @@
+{
+  "name": "loopsmith",
+  "version": "0.1.0",
+  "description": "LoopSmith CLI: run, inspect, approve and evaluate agent workflows",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "loopsmith": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@loopsmith/context": "workspace:*",
+    "@loopsmith/core": "workspace:*",
+    "@loopsmith/evaluation": "workspace:*",
+    "@loopsmith/mcp": "workspace:*",
+    "@loopsmith/observability": "workspace:*",
+    "@loopsmith/orchestration": "workspace:*",
+    "@loopsmith/policies": "workspace:*",
+    "@loopsmith/providers": "workspace:*",
+    "@loopsmith/runtime": "workspace:*",
+    "@loopsmith/storage": "workspace:*",
+    "@loopsmith/tools": "workspace:*",
+    "@loopsmith/workflow-engine": "workspace:*",
+    "@loopsmith/workspace-analyst": "workspace:*",
+    "commander": "15.0.0",
+    "picocolors": "1.1.1",
+    "zod": "4.6.7"
+  }
+}

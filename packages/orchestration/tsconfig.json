@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "src", "outDir": "dist" },
+  "include": ["src"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../observability" },
+    { "path": "../storage" },
+    { "path": "../providers" },
+    { "path": "../policies" },
+    { "path": "../tools" },
+    { "path": "../memory" },
+    { "path": "../context" },
+    { "path": "../runtime" },
+    { "path": "../workflow-engine" }
+  ]
+}

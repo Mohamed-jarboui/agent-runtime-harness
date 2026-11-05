@@ -1,0 +1,14 @@
+{
+  "name": "@loopsmith/example-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal stdio MCP server used by LoopSmith's MCP integration test",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "loopsmith-demo-mcp": "./server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  }
+}

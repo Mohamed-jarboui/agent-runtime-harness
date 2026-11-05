@@ -1,0 +1,28 @@
+{
+  "name": "@loopsmith/runtime",
+  "version": "0.1.0",
+  "description": "The bounded agent loop: decisions, tool orchestration, approvals, handoffs and recovery",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@loopsmith/context": "workspace:*",
+    "@loopsmith/core": "workspace:*",
+    "@loopsmith/policies": "workspace:*",
+    "@loopsmith/tools": "workspace:*",
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@loopsmith/evaluation",
+  "version": "0.1.0",
+  "description": "Deterministic agent evaluation harness and benchmark suite",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@loopsmith/core": "workspace:*",
+    "@loopsmith/context": "workspace:*",
+    "@loopsmith/orchestration": "workspace:*",
+    "@loopsmith/policies": "workspace:*",
+    "@loopsmith/providers": "workspace:*",
+    "@loopsmith/tools": "workspace:*",
+    "@loopsmith/workflow-engine": "workspace:*",
+    "zod": "4.6.7"
+  }
+}

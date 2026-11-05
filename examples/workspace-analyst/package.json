@@ -1,0 +1,26 @@
+{
+  "name": "@loopsmith/workspace-analyst",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autonomous Workspace Analyst: agents, workflow and deterministic model policies for the LoopSmith demo",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@loopsmith/core": "workspace:*",
+    "@loopsmith/providers": "workspace:*",
+    "@loopsmith/workflow-engine": "workspace:*",
+    "zod": "4.6.7",
+    "@loopsmith/evaluation": "workspace:*"
+  }
+}

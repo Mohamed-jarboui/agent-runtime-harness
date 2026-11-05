@@ -1,0 +1,26 @@
+{
+  "name": "@loopsmith/providers",
+  "version": "0.1.0",
+  "description": "Provider-agnostic model layer: Anthropic, OpenAI-compatible, scripted mock, retries and fallback",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.5.0",
+    "@loopsmith/core": "workspace:*",
+    "openai": "7.51.0"
+  }
+}

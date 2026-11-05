@@ -1,0 +1,32 @@
+name: Release check
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  release-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm secrets:check
+      - run: pnpm check
+      - run: pnpm build
+      - name: Demo pause → approve → resume across processes
+        run: |
+          node apps/cli/dist/index.js demo --defer --no-color
+          APPROVAL=$(node apps/cli/dist/index.js --json approvals list | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s)[0].id))")
+          node apps/cli/dist/index.js approvals approve "$APPROVAL" --resume --no-color
+          test -f .loopsmith/demo-workspace/reports/workspace-analysis.md
+      - name: Pack CLI
+        run: pnpm --filter loopsmith pack --pack-destination ./artifacts

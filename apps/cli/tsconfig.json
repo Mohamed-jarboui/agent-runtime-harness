@@ -1,0 +1,49 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../../packages/core"
+    },
+    {
+      "path": "../../packages/observability"
+    },
+    {
+      "path": "../../packages/storage"
+    },
+    {
+      "path": "../../packages/providers"
+    },
+    {
+      "path": "../../packages/policies"
+    },
+    {
+      "path": "../../packages/tools"
+    },
+    {
+      "path": "../../packages/runtime"
+    },
+    {
+      "path": "../../packages/workflow-engine"
+    },
+    {
+      "path": "../../packages/orchestration"
+    },
+    {
+      "path": "../../packages/evaluation"
+    },
+    {
+      "path": "../../packages/mcp"
+    },
+    {
+      "path": "../../examples/workspace-analyst"
+    },
+    {
+      "path": "../../packages/context"
+    }
+  ]
+}

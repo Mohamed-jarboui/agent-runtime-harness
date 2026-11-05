@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../core"
+    },
+    {
+      "path": "../context"
+    },
+    {
+      "path": "../orchestration"
+    },
+    {
+      "path": "../policies"
+    },
+    {
+      "path": "../providers"
+    },
+    {
+      "path": "../tools"
+    },
+    {
+      "path": "../workflow-engine"
+    }
+  ]
+}

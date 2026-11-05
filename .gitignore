@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.loopsmith/
+eval-results/
+*.db
+*.db-wal
+*.db-shm
+*.jsonl
+.env
+.env.*
+!.env.example
+!examples/sample-workspace/.env
+.DS_Store
+*.log

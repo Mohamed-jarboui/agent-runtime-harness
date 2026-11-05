@@ -1,0 +1,25 @@
+{
+  "name": "@loopsmith/tools",
+  "version": "0.1.0",
+  "description": "Typed tool registry, sandboxed executor and built-in workspace/calculator/memory tools",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@loopsmith/core": "workspace:*",
+    "zod": "4.6.7"
+  }
+}
